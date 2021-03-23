@@ -16,6 +16,9 @@
         &__item {
             list-style-type: none;
             padding-right: 20px;
+            i {
+                transition: all 0.3s ease;
+            }
             a {
                 img {
                     width: 20px;
@@ -24,8 +27,14 @@
                 span {
                     padding-left: 5px;
                     font-size: 20px;
+                    transition: all 0.3s ease;
                 }
                 text-decoration: none;
+                &:hover {
+                    span, i {
+                        color: #EF3651;
+                    }
+                }
             }
         }
     }

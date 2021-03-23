@@ -1,11 +1,12 @@
 const products = [
   {
     _id: '1',
-    name: 'Airpods Headphones',
+    name: 'AirPods Pro',
     image: '/images/airpods.png',
     description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
+      'AirPods настраиваются в одно касание. Автоматически включаются и устанавливают соединение.1 Пользоваться ими невероятно легко. Они оснащены специальными сенсорами, поэтому когда вы снимаете наушники, воспроизведение останавливается. При этом AirPods великолепно взаимодействуют как с iPhone, так и с Apple Watch, iPad и Mac.',
     brand: 'Apple',
+    brandImg: '/icon/brand/apple.svg',
     category: 'Electronics',
     price: `${11} ${990}`,
     countInStock: 10,
@@ -14,24 +15,26 @@ const products = [
   },
   {
     _id: '2',
-    name: 'iPhone 11 Pro 256GB Memory',
+    name: 'iPhone 12 128GB Black',
     image: '/images/phone.png',
     description:
-      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+      'A14 Bionic, самый быстрый процессор iPhone. Дисплей OLED от края до края. Передняя панель Ceramic Shield, которая в четыре раза снижает риск повреждений дисплея при падении. И Ночной режим на всех камерах. Всё это есть в iPhone 12. В двух размерах.',
     brand: 'Apple',
+    brandImg: '/icon/brand/apple.svg',
     category: 'Electronics',
-    price: `${66} ${990}`,
+    price: `${69} ${990}`,
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
   },
   {
     _id: '3',
-    name: 'Full HD Canon LEGRIA HF G26',
+    name: 'Full HD LEGRIA HF G26',
     image: '/images/camera.png',
     description:
       'Компактная и мощная видеокамера Full HD с 20-кратным оптическим зумом обеспечивает превосходное качество изображения и удобство рабочего процесса.',
-    brand: 'Cannon',
+    brand: 'Canon',
+    brandImg: '/icon/brand/canon.svg',
     category: 'Electronics',
     price: `${69} ${990}`,
     countInStock: 5,
@@ -40,11 +43,12 @@ const products = [
   },
   {
     _id: '4',
-    name: 'Sony Playstation 5',
+    name: 'Playstation 5',
     image: '/images/playstation.png',
     description:
       'Молниеносная скорость загрузки благодаря сверхскоростному накопителю SSD, невероятный эффект погружения благодаря тактильной отдаче, адаптивным спусковым кнопкам и 3D-звуку, а также потрясающие игры нового поколения для PlayStation',
     brand: 'Sony',
+    brandImg: '/icon/brand/sony.svg',
     category: 'Electronics',
     price: `${39} ${990}`,
     countInStock: 11,
@@ -53,11 +57,12 @@ const products = [
   },
   {
     _id: '5',
-    name: 'Mad Catz R.A.T. PRO X3 Black',
+    name: 'G502 Lightspeed Wireless',
     image: '/images/mouse.png',
     description:
       'Настоящее оружие победы, созданное в расчёте на опытных и требовательных геймеров и киберспортсменов.',
-    brand: 'R.A.T.',
+    brand: 'Logitech',
+    brandImg: '/icon/brand/logitech.svg',
     category: 'Electronics',
     price: `${16} ${990}`,
     countInStock: 7,
@@ -66,11 +71,12 @@ const products = [
   },
   {
     _id: '6',
-    name: 'Яндекс.Станция Макс',
+    name: 'Станция Макс',
     image: '/images/yandex_station.png',
     description:
       'Умная колонка с Алисой, которая слушается вашего голоса. Наполнит дом мощным звуком, включит на телевизоре кино в 4K, выполнит поручение, напомнит о делах или поможет с управлением умным домом',
     brand: 'Yandex',
+    brandImg: '/icon/brand/yandex.svg',
     category: 'Electronics',
     price: `${18} ${990}`,
     countInStock: 0,
@@ -79,11 +85,12 @@ const products = [
   },
   {
     _id: '7',
-    name: 'Xbox Series X',
+    name: 'Series X',
     image: '/images/xbox.png',
     description:
       'Оцените по достоинству игры в формате 4К с частотой до 120 кадров в секунду на этой консоли нового поколения.',
     brand: 'Xbox',
+    brandImg: '/icon/brand/xbox.svg',
     category: 'Electronics',
     price: `${37} ${990}`,
     countInStock: 0,
@@ -92,4 +99,4 @@ const products = [
   },
 ]
 
-export default products
+module.exports = products
