@@ -1,0 +1,95 @@
+const products = [
+  {
+    _id: '1',
+    name: 'Airpods Headphones',
+    image: '/images/airpods.png',
+    description:
+      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: `${11} ${990}`,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 12,
+  },
+  {
+    _id: '2',
+    name: 'iPhone 11 Pro 256GB Memory',
+    image: '/images/phone.png',
+    description:
+      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: `${66} ${990}`,
+    countInStock: 7,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    _id: '3',
+    name: 'Full HD Canon LEGRIA HF G26',
+    image: '/images/camera.png',
+    description:
+      'Компактная и мощная видеокамера Full HD с 20-кратным оптическим зумом обеспечивает превосходное качество изображения и удобство рабочего процесса.',
+    brand: 'Cannon',
+    category: 'Electronics',
+    price: `${69} ${990}`,
+    countInStock: 5,
+    rating: 3,
+    numReviews: 0,
+  },
+  {
+    _id: '4',
+    name: 'Sony Playstation 5',
+    image: '/images/playstation.png',
+    description:
+      'Молниеносная скорость загрузки благодаря сверхскоростному накопителю SSD, невероятный эффект погружения благодаря тактильной отдаче, адаптивным спусковым кнопкам и 3D-звуку, а также потрясающие игры нового поколения для PlayStation',
+    brand: 'Sony',
+    category: 'Electronics',
+    price: `${39} ${990}`,
+    countInStock: 11,
+    rating: 5,
+    numReviews: 1,
+  },
+  {
+    _id: '5',
+    name: 'Mad Catz R.A.T. PRO X3 Black',
+    image: '/images/mouse.png',
+    description:
+      'Настоящее оружие победы, созданное в расчёте на опытных и требовательных геймеров и киберспортсменов.',
+    brand: 'R.A.T.',
+    category: 'Electronics',
+    price: `${16} ${990}`,
+    countInStock: 7,
+    rating: 3.5,
+    numReviews: 3,
+  },
+  {
+    _id: '6',
+    name: 'Яндекс.Станция Макс',
+    image: '/images/yandex_station.png',
+    description:
+      'Умная колонка с Алисой, которая слушается вашего голоса. Наполнит дом мощным звуком, включит на телевизоре кино в 4K, выполнит поручение, напомнит о делах или поможет с управлением умным домом',
+    brand: 'Yandex',
+    category: 'Electronics',
+    price: `${18} ${990}`,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 18,
+  },
+  {
+    _id: '7',
+    name: 'Xbox Series X',
+    image: '/images/xbox.png',
+    description:
+      'Оцените по достоинству игры в формате 4К с частотой до 120 кадров в секунду на этой консоли нового поколения.',
+    brand: 'Xbox',
+    category: 'Electronics',
+    price: `${37} ${990}`,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 12,
+  },
+]
+
+export default products

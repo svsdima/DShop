@@ -1,0 +1,53 @@
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2A2C36;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        &__list {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
+        &__item {
+            list-style-type: none;
+            padding-right: 20px;
+            a {
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+                span {
+                    padding-left: 5px;
+                    font-size: 20px;
+                }
+                text-decoration: none;
+            }
+        }
+    }
+    .logo {
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        &__title {
+            font-family: Pattaya;
+            font-size: 30px;
+            padding-left: 50px;
+            span {
+                font-family: Pattaya;
+                letter-spacing: 2px;
+                display: block;
+                font-size: 15px;
+            }
+        }
+    }
+}

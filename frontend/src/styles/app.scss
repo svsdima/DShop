@@ -1,0 +1,24 @@
+@import './base/fonts';
+@import './base/global';
+
+
+* {
+    font-family: Rubik;
+    color: #F6F6F6;
+}
+body {
+    background-color: #1E1F28;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@import './block/header';
+@import './block/footer';
+@import './block/product';
+@import './block/_homeScreen';
+@import './block/rating';
+@import './block/product-screen';
