@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'AirPods Pro',
     image: '/images/airpods.png',
     description:
@@ -8,13 +7,12 @@ const products = [
     brand: 'Apple',
     brandImg: '/icon/brand/apple.svg',
     category: 'Electronics',
-    price: `${11} ${990}`,
+    price: 11990,
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'iPhone 12 128GB Black',
     image: '/images/phone.png',
     description:
@@ -22,13 +20,12 @@ const products = [
     brand: 'Apple',
     brandImg: '/icon/brand/apple.svg',
     category: 'Electronics',
-    price: `${69} ${990}`,
+    price: 69990,
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Full HD LEGRIA HF G26',
     image: '/images/camera.png',
     description:
@@ -36,13 +33,12 @@ const products = [
     brand: 'Canon',
     brandImg: '/icon/brand/canon.svg',
     category: 'Electronics',
-    price: `${69} ${990}`,
+    price: 69990,
     countInStock: 5,
     rating: 3,
     numReviews: 0,
   },
   {
-    _id: '4',
     name: 'Playstation 5',
     image: '/images/playstation.png',
     description:
@@ -50,13 +46,12 @@ const products = [
     brand: 'Sony',
     brandImg: '/icon/brand/sony.svg',
     category: 'Electronics',
-    price: `${39} ${990}`,
+    price: 39990,
     countInStock: 11,
     rating: 5,
     numReviews: 1,
   },
   {
-    _id: '5',
     name: 'G502 Lightspeed Wireless',
     image: '/images/mouse.png',
     description:
@@ -64,13 +59,12 @@ const products = [
     brand: 'Logitech',
     brandImg: '/icon/brand/logitech.svg',
     category: 'Electronics',
-    price: `${16} ${990}`,
+    price: 16990,
     countInStock: 7,
     rating: 3.5,
     numReviews: 3,
   },
   {
-    _id: '6',
     name: 'Станция Макс',
     image: '/images/yandex_station.png',
     description:
@@ -78,13 +72,12 @@ const products = [
     brand: 'Yandex',
     brandImg: '/icon/brand/yandex.svg',
     category: 'Electronics',
-    price: `${18} ${990}`,
+    price: 18990,
     countInStock: 0,
     rating: 4,
     numReviews: 18,
   },
   {
-    _id: '7',
     name: 'Series X',
     image: '/images/xbox.png',
     description:
@@ -92,7 +85,7 @@ const products = [
     brand: 'Xbox',
     brandImg: '/icon/brand/xbox.svg',
     category: 'Electronics',
-    price: `${37} ${990}`,
+    price: 37990,
     countInStock: 0,
     rating: 4,
     numReviews: 12,
