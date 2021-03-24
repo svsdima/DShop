@@ -1,10 +1,17 @@
-const express = require('express');
-const products = require('./data/products');
+import express from'express';
+import dotenv from'dotenv';
+import colors from 'colors';
+import connectDB from './config/db.js';
+import products from'./data/products.js';
+
+dotenv.config();
+
+connectDB();
 
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('API запущен');
+    res.send('API запущен...');
 })
 
 app.get('/api/products', (req, res) => {
@@ -16,4 +23,5 @@ app.get('/api/products/:id', (req, res) => {
     res.json(product);
 })
 
-app.listen(5000, console.log('Сервер работает на 5000 порту'));
+const PORT = process.env.PORT || 5000
+app.listen(PORT, console.log(`Сервер работает на ${PORT} порту в режиме ${process.env.NODE_ENV}`.yellow.bold));
