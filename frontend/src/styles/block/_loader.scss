@@ -1,0 +1,31 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__circle {
+        animation: spinningColor 1.5s linear infinite;
+        margin: 50px auto;
+        border: 5px dotted #F6F6F6;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    @keyframes spinningColor {
+        0% {
+            transform: rotate(360deg);
+            border-top:5px double  #00FF3F;
+            border-bottom:5px double  #00FF3F;
+        }
+        50% {
+            border-top:5px double   #003a0e;
+            border-bottom:5px double  #003a0e;
+        }
+        100% {
+            border-top:5px double  #00FF3F;
+            border-bottom:5px double  #00FF3F;
+        }
+    }
+
+}

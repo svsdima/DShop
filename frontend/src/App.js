@@ -11,7 +11,6 @@ const App = () => {
     <Router>
       <Header />
         <div className="container">
-          <h1 className="title">Добро пожаловать в DShop</h1>
         </div>
         <Route path="/" component={HomeScreen} exact />
         <Route path="/product/:id" component={ProductScreen} />
