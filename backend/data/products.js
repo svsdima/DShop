@@ -90,6 +90,19 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  {
+    name: 'HyperPC Alpha',
+    image: '/images/hyperPC_Alpha.png',
+    description:
+      'Сделан на самом лучшем и долговечном железе, которое годами тестировалось и проверялось опытным путем. Все комплектующие идеально совместимы друг с другом, а возможности персональной кастомизации и эксклюзивная система жидкостного охлаждения позволяют создать истинный техно-шедевр.',
+    brand: 'Xbox',
+    brandImg: '/icon/brand/xbox.svg',
+    category: 'Electronics',
+    price: 184990,
+    countInStock: 0,
+    rating: 4.5,
+    numReviews: 5,
+  },
 ]
 
 export default products

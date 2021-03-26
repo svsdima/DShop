@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState ,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Loader from '../components/Loader';
@@ -6,7 +6,9 @@ import Rating from '../components/Rating';
 import { listProductDetails } from '../actions/productActions';
 import { productDetailsReducer } from '../reducers/productReducers';
 
-const ProductScreen = ({ match }) => {
+const ProductScreen = ({ history ,match }) => {
+    const [qty, setQty] = useState(0);
+
     const dispatch = useDispatch();
 
     const productDetails = useSelector(state => state.productDetails);
@@ -15,6 +17,10 @@ const ProductScreen = ({ match }) => {
     useEffect(() => {
         dispatch(listProductDetails(match.params.id));
     }, [dispatch, match]);
+
+    const addToCartHandler = () => {
+        history.push(`/cart/${match.params.id}?qty=${qty}`)
+    }
 
 
     return (
@@ -74,7 +80,20 @@ const ProductScreen = ({ match }) => {
                         <div className="product-screen__status">
                             {product.countInStock > 0 ? 'В наличии' : 'Нет в наличии'}
                         </div>
-                        <button className="btn btn__add" disabled={product.countInStock === 0}>
+                        {product.countInStock > 0 && (
+                            <div className="product-screen__count">
+                                <div className="product-screen__qty">Количество</div>
+                                <select className="product-screen__select" value={qty} onChange={(e) => setQty(e.target.value)}>
+                                    {[...Array(product.countInStock).keys()].map(x => (
+                                        <option key={x + 1} value={x + 1}>
+                                            {x + 1}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>   
+                        )}
+                        
+                        <button className="btn btn__add" onClick={addToCartHandler} disabled={product.countInStock === 0}>
                                 Добавить в Корзину
                         </button>
                     </div>

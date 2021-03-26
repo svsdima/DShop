@@ -7,7 +7,7 @@ const Header = () => {
             <div className="container">
                 <div className="header__wrapper">
                     <Link className="logo" to="/">
-                        <img src="/icon/DShop_Logo_Gray.svg" alt="logo"></img>
+                        <img src="/icon/DShop_Logo_Main.svg" alt="logo"></img>
                         <div className="logo__title">
                             DShop
                             <span>магазин цифровой техники</span>

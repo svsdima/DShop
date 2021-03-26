@@ -57,4 +57,20 @@
         padding: 10px 0 20px 0;
         font-size: 20px;
     }
+    &__count {
+        padding: 10px 0;
+    }
+    &__qty {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    &__select {
+        padding: 0 5px;
+        font-size: 18px;
+        option {
+            background-color: #1E1F28;
+            font-size: 18px;
+        }
+        background-color: transparent;
+    }
 }
