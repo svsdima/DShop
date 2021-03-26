@@ -16,6 +16,12 @@ const Header = () => {
                     <nav className="menu">
                         <ul className="menu__list">
                             <li className="menu__item">
+                                <Link to="/">
+                                    <i className="fas fa-home"></i>
+                                    <span>Главная</span>
+                                </Link>
+                            </li>
+                            <li className="menu__item">
                                 <Link to="/cart">
                                     <i className="fas fa-shopping-cart"></i>
                                     <span>Корзина</span>

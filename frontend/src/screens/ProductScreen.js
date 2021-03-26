@@ -7,7 +7,7 @@ import { listProductDetails } from '../actions/productActions';
 import { productDetailsReducer } from '../reducers/productReducers';
 
 const ProductScreen = ({ history ,match }) => {
-    const [qty, setQty] = useState(0);
+    const [qty, setQty] = useState(1);
 
     const dispatch = useDispatch();
 
@@ -51,11 +51,11 @@ const ProductScreen = ({ history ,match }) => {
                         <div className="line"></div>
                     </div>
                 <div className="product-screen__down">
-                    <div className="product-screen__img">
+                    <div className="img product-screen__img">
                         <img src={product.image} alt={product.name}></img>
                     </div>
                     <div>
-                        <div className="product-screen__descr">
+                        <div className="select product-screen__descr">
                             {product.description}
                         </div>
                         <Rating 

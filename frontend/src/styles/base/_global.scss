@@ -1,7 +1,12 @@
 .title {
-    font-family: Pattaya;
-    font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 main {
     height: 70vh;
@@ -9,6 +14,9 @@ main {
 img {
     display: inline-block;
     width: 100%;
+}
+.img {
+    background-color: #ABB4BD;
 }
 .line {
     width: 100%;
@@ -28,7 +36,17 @@ img {
     &__add {
         padding: 20px 50px;
     }
+    &__delete {
+        padding: 10px 15px;
+    }
+    &__checkout {
+        padding: 15px 20px;
+        font-size: 22px;
+    }
     &:hover {
+        i {
+            color: #1E1F28 ;
+        }
         // background-color: #EF3651;
         // box-shadow: 2px 2px 10px 0 #EF3651;
         background-color: #B9BFB5;
@@ -41,4 +59,22 @@ img {
     text-align: center;
     font-size: 40px;
     font-weight: 500;
+}
+.message {
+    margin: 20px 0;
+    padding: 20px 20px 20px 0;
+    background-color: #40424d;
+    span {
+        padding: 0 10px;
+        font-size: 20px;
+    }
+}
+.select {
+    padding: 0 5px;
+    font-size: 18px;
+    option {
+        background-color: #1E1F28;
+        font-size: 18px;
+    }
+    background-color: transparent;
 }

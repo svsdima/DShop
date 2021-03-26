@@ -18,7 +18,7 @@ function HomeScreen() {
   return (
     <div className="home">
       <div className="container">
-        <div className="home__title">Популярные товары</div>
+        <div className="title">Популярные товары</div>
         { loading ? (
           <Loader />
         ) : error ? ( 
