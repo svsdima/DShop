@@ -43,6 +43,11 @@ img {
         padding: 15px 20px;
         font-size: 22px;
     }
+    &__sign-in {
+        padding: 10px 30px;
+        margin: 10px 0;
+        font-size: 25px;
+    }
     &:hover {
         i {
             color: #1E1F28 ;
@@ -61,8 +66,9 @@ img {
     font-weight: 500;
 }
 .message {
+    width: 60%;
     margin: 20px 0;
-    padding: 20px 20px 20px 0;
+    padding: 20px 40px ;
     background-color: #40424d;
     span {
         padding: 0 10px;
@@ -77,4 +83,39 @@ img {
         font-size: 18px;
     }
     background-color: transparent;
+}
+.register,
+.login {
+    font-size: 18px;
+    font-weight: 300;
+    a {
+        transition: all 0.3s ease;
+        text-decoration: none;
+        position: relative;
+        font-weight: 500;
+        &:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #fff;
+            transition: all 0.3s;
+        }
+        &:hover {
+            &:before {
+                width: 100%;
+                left: 0;
+                background: #EF3651;
+            }
+            color: #EF3651;
+        }
+        
+    }
+    
+}
+.user-name {
+    background-color: transparent;
+    color: black;
 }

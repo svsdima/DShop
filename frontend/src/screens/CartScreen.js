@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Message from '../components/Message';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 
@@ -37,7 +38,10 @@ const CartScreen = ({ match, location, history }) => {
                 <div className="title">Корзина</div>
                 <div className="cart-screen__wrapper">
                     {cartItems.length === 0 
-                    ? <div className="message"><span>Ваша корзина пуста</span> <Link className="btn btn__back" to='/' >Назад</Link></div> 
+                    ? 
+                    <Message>
+                    <span>Ваша корзина пуста</span> <Link className="btn btn__back" to='/'>Назад</Link>
+                    </Message>
                     : (
                         <div className="cart-screen__list">
                         {cartItems.map((item) => (

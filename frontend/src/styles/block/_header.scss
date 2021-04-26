@@ -9,6 +9,7 @@
         justify-content: space-between;
         align-items: center;
     }
+
     .menu {
         &__list {
             display: flex;
@@ -18,6 +19,16 @@
         &__item {
             list-style-type: none;
             padding-right: 20px;
+            cursor: pointer;
+            position: relative;
+            span {
+                padding-left: 5px;
+                font-size: 20px;
+                transition: all 0.3s ease;
+            }
+            ul {
+                display: none;
+            }
             i {
                 transition: all 0.3s ease;
             }
@@ -26,16 +37,19 @@
                     width: 20px;
                     height: 20px;
                 }
-                span {
-                    padding-left: 5px;
-                    font-size: 20px;
-                    transition: all 0.3s ease;
-                }
+
                 text-decoration: none;
                 &:hover {
                     span, i {
                         color: #EF3651;
                     }
+                }
+            }
+            &:hover {
+                ul {
+                    display: block;
+                    position: absolute;
+                    left: 0;
                 }
             }
         }

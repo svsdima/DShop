@@ -1,9 +1,14 @@
 .home {
     padding: 60px 0;
+    // &__list {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-between;
+    //     align-items: flex-start;
+    // }
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 40px;
     }
 }

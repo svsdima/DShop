@@ -1,0 +1,18 @@
+.form {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    &__label {
+        text-align: left;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    &__input {
+        background-color: #40424d;
+        font-size: 20px;
+        color: #F6F6F6;
+        padding: 8px 5px;
+    }
+}

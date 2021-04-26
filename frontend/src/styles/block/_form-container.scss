@@ -1,0 +1,12 @@
+.form-container {
+    padding: 40px 0;
+    &__wrapper {
+        padding: 15px 0;
+        border: 1px solid #ABB4BD;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

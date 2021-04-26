@@ -83,7 +83,7 @@ const ProductScreen = ({ history ,match }) => {
                         {product.countInStock > 0 && (
                             <div className="product-screen__count">
                                 <div className="product-screen__qty">Количество</div>
-                                <select className="product-screen__select" value={qty} onChange={(e) => setQty(e.target.value)}>
+                                <select className="select product-screen__select" value={qty} onChange={(e) => setQty(e.target.value)}>
                                     {[...Array(product.countInStock).keys()].map(x => (
                                         <option key={x + 1} value={x + 1}>
                                             {x + 1}
